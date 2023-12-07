@@ -16,30 +16,22 @@
             <div class="relative mb-6">
                 <label for="" class="text-black-300">Nombre</label>
                 <input type="text" name="name" id=""class="w-full p-2 border border-blue-300 rounded-lg"  placeholder="Nombre">
-                @error('name')
-                <p>{{ $message }}</p>
-                @enderror
+                
             </div>
             <div class="relative mb-6">
                 <label for="" class=" text-black-300">Cedula</label>
                 <input type="text" name="cedula" id=""class="w-full p-2 border border-blue-300 rounded-lg"  placeholder="Cedula">
-                @error('cedula')
-                <p>{{ $message }}</p>
-                @enderror
+                
             </div>
             <div class="relative mb-6">
                 <label for="" class=" text-black-300">Dirección</label>
                 <input type="text" name="direccion" id=""class="w-full p-2 border border-blue-300 rounded-lg"  placeholder="Difección">
-                @error('direccion')
-                <p>{{ $message }}</p>
-                @enderror
+                
             </div>
             <div class="relative mb-6">
                 <label for="" class=" text-black-300">Teléfono</label>
                 <input type="text" name="telefono" id=""class="w-full p-2 border border-blue-300 rounded-lg"  placeholder="Teléfono">
-                @error('telefono')
-                <p class="bg-red-500">{{ $message }}</p>
-                @enderror
+                
             </div>
             <div>
                 <input type="submit" value="Registrarse" class="flex cursor-pointer bg-green-400 p-3 mb-5 mt-5 ml-[auto] mr-[auto] rounded-lg">

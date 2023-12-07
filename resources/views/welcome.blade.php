@@ -4,5 +4,7 @@
     Venta de Eletrodomesticos
 @endsection
 @section('contenido')
-    IMG
+    <div>
+        <img src="" alt="">
+    </div>
 @endsection

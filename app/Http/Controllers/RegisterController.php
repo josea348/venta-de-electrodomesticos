@@ -11,9 +11,9 @@ class RegisterController extends Controller
     }
     public function store(Request $request){
         $this->validate($request, [
-            'name'=>'required|email',
+            'name'=>'required',
             'cedula'=>'required',
-            'direccion'=>'required|email',
+            'direccion'=>'required',
             'telefono'=>'required'
         ]);
 
