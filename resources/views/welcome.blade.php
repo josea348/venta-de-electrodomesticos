@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('titulo')
-    hola mundo desde Principal
+    Venta de Eletrodomesticos
 @endsection
 @section('contenido')
-    hola contenido desde Principal
+    IMG
 @endsection
