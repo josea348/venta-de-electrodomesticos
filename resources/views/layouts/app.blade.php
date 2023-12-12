@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Venta de Eletrodomesticos</title>
+  <link rel="shortcut icon" href="{{ asset('img/favicon.jpg') }}" type="image/jpg">
   @vite('resources/css/app.css')
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.bunny.net">
@@ -17,7 +18,7 @@
       <a href="/register" class="uppercase text-gray-600 font-bold text-small bg-blue-300 p-1 pl-2 pr-2 m-2 rounded-lg">crear cuenta</a>
     </nav>
   </header>
-  <h1 class="text-3xl font-bold container text-center">
+  <h1 class="text-3xl font-bold container flex ml-[auto] mr-[auto] justify-center">
     @yield('titulo')
   </h1>
   <div>

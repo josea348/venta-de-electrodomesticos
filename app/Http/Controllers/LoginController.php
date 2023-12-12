@@ -11,11 +11,11 @@ class LoginController extends Controller
     }
     public function store(Request $request){
         $this->validate($request, [
-            'email'=>'required|email',
-            'password'=>'required'
+            'name'=>'required|name',
+            'cedula'=>'required'
         ]);
 
-        if(!auth()->attempt($request->only('email', 'password'))){
+        if(!auth()->attempt($request->only('name', 'cedula'))){
             return back()->with('mensaje','Error en la autenticación, algo no coincide');
         }
 
