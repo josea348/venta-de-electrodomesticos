@@ -6,19 +6,23 @@ use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
-    public function index(){
+    //
+    public function index()
+    {
         return view('auth.login');
     }
-    public function store(Request $request){
+
+    public function store(Request $request)
+    {
         $this->validate($request, [
-            'name'=>'required|name',
-            'cedula'=>'required'
+            'email'=> 'required|email',
+            'password'=>'required'
         ]);
 
-        if(!auth()->attempt($request->only('name', 'cedula'))){
-            return back()->with('mensaje','Error en la autenticación, algo no coincide');
+        if(!auth()->attempt($request->only('email', 'password'))){
+            return back()->with('mensaje', 'Error de autenticacion');
         }
 
-        return redirect()->route('post.index');
+        return redirect(route('inicio'));
     }
 }
